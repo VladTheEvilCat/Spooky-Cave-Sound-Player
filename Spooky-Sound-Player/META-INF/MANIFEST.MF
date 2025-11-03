@@ -1,0 +1,91 @@
+Manifest-Version: 1.0
+Created-By: Vlad. J. Caso
+Main-Class: Main
+
+Name: sounds-sorted/smol-spook/Cave1.wav
+
+Name: sounds-sorted/smol-spook/Cave2.wav
+
+Name: sounds-sorted/smol-spook/Cave3.wav
+
+Name: sounds-sorted/smol-spook/Cave4.wav
+
+Name: sounds-sorted/smol-spook/Cave5.wav
+
+Name: sounds-sorted/smol-spook/Cave6.wav
+
+Name: sounds-sorted/smol-spook/Cave7.wav
+
+Name: sounds-sorted/smol-spook/Cave8.wav
+
+Name: sounds-sorted/smol-spook/Cave9.wav
+
+Name: sounds-sorted/smol-spook/Cave10.wav
+
+Name: sounds-sorted/smol-spook/Cave12.wav
+
+Name: sounds-sorted/smol-spook/Cave13.wav
+
+Name: sounds-sorted/medium-spook/Cave14.wav
+
+Name: sounds-sorted/medium-spook/Cave15.wav
+
+Name: sounds-sorted/medium-spook/Cave16.wav
+
+Name: sounds-sorted/medium-spook/Cave17.wav
+
+Name: sounds-sorted/medium-spook/Cave18.wav
+
+Name: sounds-sorted/medium-spook/Cave19.wav
+
+Name: sounds-sorted/beeg-spook/Cave20.wav
+
+Name: sounds-sorted/beeg-spook/Cave21.wav
+
+Name: sounds-sorted/beeg-spook/Cave22.wav
+
+Name: sounds-sorted/beeg-spook/Cave23.wav
+
+Name: sounds/Cave1.wav
+
+Name: sounds/Cave2.wav
+
+Name: sounds/Cave3.wav
+
+Name: sounds/Cave4.wav
+
+Name: sounds/Cave5.wav
+
+Name: sounds/Cave6.wav
+
+Name: sounds/Cave7.wav
+
+Name: sounds/Cave8.wav
+
+Name: sounds/Cave9.wav
+
+Name: sounds/Cave10.wav
+
+Name: sounds/Cave12.wav
+
+Name: sounds/Cave13.wav
+
+Name: sounds/Cave14.wav
+
+Name: sounds/Cave15.wav
+
+Name: sounds/Cave16.wav
+
+Name: sounds/Cave17.wav
+
+Name: sounds/Cave18.wav
+
+Name: sounds/Cave19.wav
+
+Name: sounds/Cave20.wav
+
+Name: sounds/Cave21.wav
+
+Name: sounds/Cave22.wav
+
+Name: sounds/Cave23.wav
