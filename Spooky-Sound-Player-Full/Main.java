@@ -16,13 +16,11 @@ import java.io.*;
  */
 public abstract class Main
 {
-    public static final Random rand = new Random();
-    
     public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException
     {
         AudioPlayer player;
         if(args.length==0){
-            int I = rand.nextInt(23)+1;
+            int I = new Random.nextInt(23)+1;
             player = new AudioPlayer(Main.class.getResource("/Cave"+I+".wav"));
         } else {
             String fileName = "";
@@ -32,12 +30,11 @@ public abstract class Main
                 fileName=args[0];
             else if (args[0].startsWith("="))
                 fileName="/Cave"+args[0].substring(1)+".wav";
-            else if( args.length==2 && (args[0].equalsIgnoreCase("-random") || args[0].equalsIgnoreCase("-r"))) {
+            else if( args.length==2 && args[0].equalsIgnoreCase("-l")) {
                 int num = switch (args[1]) { // "Spooky-ness" level (0, 1, 2)
-                    case "0" -> rand.nextInt(13)+1;
-                    case "1" -> rand.nextInt(13,19)+1;
-                    case "2" -> rand.nextInt(19,23)+1;
-                    default -> rand.nextInt(13)+1;
+                    case "1" -> new Random.nextInt(13,19)+1;
+                    case "2" -> new Random.nextInt(19,23)+1;
+                    default -> new Random.nextInt(13)+1;
                 };
                 fileName+="/Cave"+num+".wav";
             }
