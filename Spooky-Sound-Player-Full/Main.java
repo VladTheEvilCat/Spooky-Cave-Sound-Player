@@ -18,13 +18,12 @@ public abstract class Main
 {
     public static final Random rand = new Random();
     
-    public static void main(String[] args) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException,javax.sound.sampled.LineUnavailableException
+    public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException
     {
         AudioPlayer player;
         if(args.length==0){
             int I = rand.nextInt(23)+1;
             player = new AudioPlayer(Main.class.getResource("/Cave"+I+".wav"));
-            player.playSound();
         } else {
             String fileName = "";
             if (args[0].equalsIgnoreCase("-d"))
@@ -34,7 +33,7 @@ public abstract class Main
             else if (args[0].startsWith("="))
                 fileName="/Cave"+args[0].substring(1)+".wav";
             else if( args.length==2 && (args[0].equalsIgnoreCase("-random") || args[0].equalsIgnoreCase("-r"))) {
-                int num = switch (args[1]) { // "Spooky-ness level (0, 1, 2)
+                int num = switch (args[1]) { // "Spooky-ness" level (0, 1, 2)
                     case "0" -> rand.nextInt(13)+1;
                     case "1" -> rand.nextInt(13,19)+1;
                     case "2" -> rand.nextInt(19,23)+1;
@@ -43,8 +42,8 @@ public abstract class Main
                 fileName+="/Cave"+num+".wav";
             }
             player = new AudioPlayer(Main.class.getResource(fileName));
-            player.playSound();
         }
+        player.playSound();
     }
 
     private static class AudioPlayer {
