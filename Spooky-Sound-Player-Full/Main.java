@@ -22,22 +22,21 @@ public abstract class Main
         String fileName;
         if(args.length==0){
             int I = new Random.nextInt(23)+1;
-            fileName = "/Cave"+I+".wav";
+            fileName = "/Cave"+ I +".wav";
         } else {
-            fileName = "";
             if (args[0].equalsIgnoreCase("-d"))
-                fileName="/Cave1.wav";
+                fileName = "/Cave1.wav";
             else if (args[0].startsWith("/"))
-                fileName=args[0];
+                fileName = args[0];
             else if (args[0].startsWith("="))
-                fileName="/Cave"+args[0].substring(1)+".wav";
+                fileName = "/Cave"+args[0].substring(1)+".wav";
             else if( args.length==2 && args[0].equalsIgnoreCase("-l")) {
                 int num = switch (args[1]) { // "Spooky-ness" level (0, 1, 2)
                     case "1" -> new Random.nextInt(13,19)+1;
                     case "2" -> new Random.nextInt(19,23)+1;
                     default -> new Random.nextInt(13)+1;
                 };
-                fileName+="/Cave"+num+".wav";
+                fileName = "/Cave"+num+".wav";
             }
             
         }
@@ -63,7 +62,7 @@ public abstract class Main
 
         public void playSound() {
             this.audioClip.start();
-            try {Thread.sleep(audioClip.getMicrosecondLength()/1000);}
+            try {Thread.sleep(audioClip.getMicrosecondLength()/1000);}// Wait for sound to finish playing
             catch (InterruptedException e){e.printStackTrace();}
             // Cleanup!
             this.audioClip.close();
