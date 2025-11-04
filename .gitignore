@@ -1,0 +1,11 @@
+.idea/libraries/Spooky_Cave_Sound_Player.xml
+.idea/libraries/SSP.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+*.ini
+/.idea
+/Spooky-Sound-Player-Full/.idea
+/Spooky-Sound-Player-Full/out
+/Spooky-Sound-Player-Full/doc
+*.bluej
