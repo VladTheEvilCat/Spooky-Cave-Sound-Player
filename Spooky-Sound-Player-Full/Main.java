@@ -19,11 +19,12 @@ public abstract class Main
     public static void main(String[] args) throws UnsupportedAudioFileException,IOException,LineUnavailableException
     {
         AudioPlayer player;
+        String fileName;
         if(args.length==0){
             int I = new Random.nextInt(23)+1;
-            player = new AudioPlayer(Main.class.getResource("/Cave"+I+".wav"));
+            fileName = "/Cave"+I+".wav";
         } else {
-            String fileName = "";
+            fileName = "";
             if (args[0].equalsIgnoreCase("-d"))
                 fileName="/Cave1.wav";
             else if (args[0].startsWith("/"))
@@ -38,8 +39,9 @@ public abstract class Main
                 };
                 fileName+="/Cave"+num+".wav";
             }
-            player = new AudioPlayer(Main.class.getResource(fileName));
+            
         }
+        player = new AudioPlayer(Main.class.getResource(fileName));
         player.playSound();
     }
 
