@@ -24,9 +24,7 @@ public abstract class Main
             int I = new Random.nextInt(23)+1;
             fileName = "/Cave"+ I +".wav";
         } else {
-            if (args[0].equalsIgnoreCase("-d"))
-                fileName = "/Cave1.wav";
-            else if (args[0].startsWith("/"))
+            if (args[0].startsWith("/"))
                 fileName = args[0];
             else if (args[0].startsWith("="))
                 fileName = "/Cave"+args[0].substring(1)+".wav";
